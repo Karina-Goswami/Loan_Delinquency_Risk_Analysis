@@ -1,4 +1,3 @@
-# Delinquency Prediction using Machine Learning
 
 ## 📋 Project Overview
 
@@ -89,23 +88,13 @@ Designed interactive visuals using slicers, KPIs, and charts.
 
 🔸 Dashboard Features
 
-✅ Loan Delinquency by Age, Gender, and Income
-✅ Default Rate by Region or Loan Type
-✅ Correlation between Credit Score & Default
-✅ Total Customers, Defaults, and Active Loans KPIs
-✅ Filter by Loan Type, Status, or Demographics
-
-🔸 Sample Charts
-
-Bar Chart: Default Rate by Loan Type
-
-Pie Chart: Distribution by Customer Segment
-
-Line Chart: Monthly Trend of Delinquency
-
-KPI Cards: Total Customers, Defaults, Active Loans
+✅ Loan Delinquency by Age and Income
+✅ Month wise payment status,location wise delinquency status
+✅ Total Customers, Average Income, Average loan balance,Average missed payment KPIs
+✅ Filter by Employeement status,income category,month wise filter
 
 
+<img width="1311" height="737" alt="delinquency" src="https://github.com/user-attachments/assets/7e1341fa-5c2b-42b3-b8cb-f4459f21b9c7" />
 
 ## 🧩 Technologies Used
 
