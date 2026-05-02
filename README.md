@@ -29,19 +29,19 @@ Together, the machine learning model and the dashboard help institutions **ident
 
 ##  Power BI Dashboard
 
-### 🔸 Objective
+###  Objective
 To provide interactive business insights on delinquency trends, customer profiles, and key influencing factors.
 
-### 🔸 Steps
+###  Steps
 - Imported the cleaned dataset (`cleaned_data.csv`) into Power BI.
 - Created data relationships and data model.
 - Designed interactive visuals using slicers, KPIs, and charts.
 
-### 🔸 Dashboard Features
-- ✅ Loan Delinquency by Age and Income
-- ✅ Month-wise payment status and location-wise delinquency status
-- ✅ KPIs — Total Customers, Average Income, Average Loan Balance, Average Missed Payments
-- ✅ Filters by Employment Status, Income Category, and Month
+###  Dashboard Features
+-  Loan Delinquency by Age and Income
+-  Month-wise payment status and location-wise delinquency status
+-  KPIs — Total Customers, Average Income, Average Loan Balance, Average Missed Payments
+-  Filters by Employment Status, Income Category, and Month
 
 ---
 
