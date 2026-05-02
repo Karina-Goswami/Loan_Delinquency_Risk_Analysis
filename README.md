@@ -12,7 +12,7 @@ The goal is to build a predictive model that helps financial institutions identi
 
 ##  Dashboard Preview
 
-<img width="1196" height="730" alt="Screenshot 2026-05-01 150808" src="https://github.com/user-attachments/assets/db322a73-dfb6-45e7-bb2b-885684d195bf" />
+<img width="1195" height="727" alt="image" src="https://github.com/user-attachments/assets/5840dc45-6a24-4fd2-ab3a-47922265e385" />
 
 
 ##  Power BI Dashboard
