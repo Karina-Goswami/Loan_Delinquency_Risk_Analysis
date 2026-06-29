@@ -183,10 +183,7 @@ The solution provides several business benefits:
 * SQL
 * Python
 * Pandas
-* NumPy
 * Power BI
-* Matplotlib
-* Seaborn
 
 ---
 
