@@ -81,7 +81,7 @@ The dashboard allows users to:
 Interactive filters enable business users to analyze specific customer groups based on month, employment status, income category, payment status, location, and delinquency status.
 
 ---
-<img width="1139" height="731" alt="Screenshot 2026-06-29 190317" src="https://github.com/user-attachments/assets/263401ee-5338-4fe4-87bf-08105dd67283" />
+<img width="946" height="610" alt="Screenshot 2026-06-29 233819" src="https://github.com/user-attachments/assets/273c7090-6826-4791-9dbb-25cf7fbecf77" />
 
 ## 2. Risk Analysis Dashboard
 
@@ -105,7 +105,7 @@ The dashboard enables decision-makers to:
 * Review high-risk customers requiring additional assessment before loan approval.
 
 ---
-<img width="1070" height="741" alt="Screenshot 2026-06-29 190338" src="https://github.com/user-attachments/assets/2d24ead5-a474-470b-a043-1d9d3e2798d7" />
+<img width="853" height="634" alt="Screenshot 2026-06-29 233857" src="https://github.com/user-attachments/assets/66493e6d-d153-4924-b913-47a3bfc7df39" />
 
 # Key Business Insights
 
