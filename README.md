@@ -1,208 +1,197 @@
-A complete end-to-end data analysis and machine learning project to identify and predict credit card delinquency risk using Python and Power BI.
+# Loan Delinquency Risk Analysis: Leveraging Data Analytics to Improve Credit Risk Management
+
+## Executive Summary
+
+Financial institutions face significant challenges when borrowers miss or delay loan repayments, resulting in increased financial risk and reduced profitability. This project analyzes customer financial and repayment behavior to identify delinquency patterns and provide actionable insights through interactive dashboards and predictive analytics.
+
+Using Python for data preparation and analysis, SQL for data handling, and Power BI for visualization, the project delivers a comprehensive view of customer risk profiles, repayment trends, and loan portfolio performance. The solution enables stakeholders to identify high-risk customers, monitor portfolio health, and support data-driven lending decisions.
 
 ---
 
-##  Project Overview
+# Business Problem
 
-This project aims to **predict loan delinquency** (i.e., whether a customer will default or delay payments) using **Machine Learning techniques**. The pipeline covers every major step of a data science workflow — from raw data to model evaluation.
+Loan delinquency directly impacts the financial stability of lending institutions. Traditional methods of monitoring customer repayments are often manual, time-consuming, and reactive.
 
-The goal is to build a predictive model that helps financial institutions identify **high-risk borrowers** early and take preventive actions.
+Business teams require an analytical solution that can:
 
----
-## Problem Statement
-
-Credit card delinquency is a major problem for banks and financial institutions. When customers miss or delay their payments, it leads to financial losses and increases risk for the lender.
-
-The earlier a bank can spot a customer who is likely to miss payments, the better it can manage that risk — whether by sending reminders, adjusting credit limits, or offering repayment plans.
-
-This project uses **Machine Learning** to predict which customers are at risk of becoming delinquent, based on their income, credit score, payment history, and other financial details.
-
-To support this, a **Power BI dashboard** was built to give a clear visual picture of the data — showing which locations have more delinquent customers, how payment behavior changes month by month, which credit card types carry more risk, and how income and age affect delinquency. This makes it easy for business teams and analysts to explore the data, spot patterns quickly, and make informed decisions — without needing to write any code.
-
-Together, the machine learning model and the dashboard help institutions **identify risk early and act on it effectively**.
-
----
-##  Dashboard Preview
-
-<img width="1195" height="727" alt="image" src="https://github.com/user-attachments/assets/5840dc45-6a24-4fd2-ab3a-47922265e385" />
-
-
-##  Power BI Dashboard
-
-###  Objective
-To provide interactive business insights on delinquency trends, customer profiles, and key influencing factors.
-
-###  Steps
-- Imported the cleaned dataset (`cleaned_data.csv`) into Power BI.
-- Created data relationships and data model.
-- Designed interactive visuals using slicers, KPIs, and charts.
-
-###  Dashboard Features
--  Loan Delinquency by Age and Income
--  Month-wise payment status and location-wise delinquency status
--  KPIs — Total Customers, Average Income, Average Loan Balance, Average Missed Payments
--  Filters by Employment Status, Income Category, and Month
+* Monitor repayment behavior across the loan portfolio.
+* Identify customer segments with higher delinquency risk.
+* Understand factors contributing to missed payments.
+* Support faster and more informed credit decisions.
+* Reduce potential financial losses through early risk identification.
 
 ---
 
-##  Project Pipeline
+# Project Objectives
 
-### 1️⃣ Load the Dataset
-- Imported the dataset using **pandas**.
-- Performed an initial check on shape, column names, and data types.
+The primary objective of this project was to analyze customer repayment behavior and develop an interactive reporting solution that helps financial institutions:
 
-### 2️⃣ Dataset Overview
-- Used `.head()`, `.info()`, and `.describe()` to understand dataset structure.
-- Observed distributions and unique values for key columns.
-
-### 3️⃣ Data Cleaning
-- **Handled Missing Values:** Filled or removed null values based on column relevance.
-- **Removed Duplicates:** Identified duplicate rows using `df.duplicated()` and dropped them.
-- **Saved Clean Data:** Exported the cleaned dataset to `cleaned_data.csv` for further analysis.
-
-### 4️⃣ Exploratory Data Analysis (EDA)
-- Visualized the data to understand trends and relationships using **Matplotlib** and **Seaborn**.
-- Analyzed correlations between numeric features and the target variable.
-- Created distribution plots, boxplots, and heatmaps to detect outliers and patterns.
-
-### 5️⃣ Data Preprocessing
-- Encoded categorical variables using **Label Encoding / One-Hot Encoding**.
-- Scaled numerical features using **StandardScaler / MinMaxScaler**.
-- Split dataset into **training and testing sets** using an 80-20 ratio.
-
-### 6️⃣ Handling Imbalanced Data
-- Checked class balance using `value_counts()`.
-- Used **SMOTE (Synthetic Minority Over-sampling Technique)** or **class weights** to balance target labels.
-
-### 7️⃣ Model Building
-
-Trained multiple machine learning models, including:
-- Logistic Regression
-- Decision Tree Classifier
-- Random Forest Classifier
-- XGBoost / Gradient Boosting
-
-Evaluated models on:
-- **Accuracy**
-- **Precision**
-- **Recall**
-- **F1-Score**
-- **ROC-AUC Curve**
-
-### 8️⃣ Model Evaluation
-- Compared model performance using confusion matrix and classification reports.
-- Selected the best-performing model based on evaluation metrics.
+* Monitor loan portfolio performance.
+* Identify delinquent and high-risk customers.
+* Understand the relationship between customer demographics and repayment behavior.
+* Support credit risk assessment using analytical insights.
+* Enable business users to explore data without technical expertise.
 
 ---
 
----
+# Data Preparation
 
-##  Target Variable
+The dataset was cleaned and prepared using Python before being imported into Power BI.
 
-| Value | Meaning |
-|---|---|
-| `0` | Good standing (no delinquency) |
-| `1` | Delinquent (missed or overdue payments) |
+The preparation process included:
 
-**Class Distribution:** 84% non-delinquent · 16% delinquent
+* Handling missing and inconsistent values.
+* Removing duplicate records.
+* Standardizing categorical information.
+* Preparing customer attributes for analysis.
+* Creating calculated business metrics required for reporting.
 
----
-
-##  Model Results
-
-| Model | Accuracy | ROC-AUC | Class 1 F1 |
-|---|---|---|---|
-| Logistic Regression (SMOTE) | 70% | 0.375 | 0.12 |
-| Random Forest (SMOTE) | 79% | 0.376 | 0.00 |
-| XGBoost (Upsampling) | 79% | 0.343 | 0.00 |
+A structured and clean dataset ensured reliable insights throughout the dashboard.
 
 ---
 
-##  Technologies Used
+# Dashboard Overview
 
-| Category | Tools / Libraries |
-|---|---|
-| Programming | Python |
-| Data Handling | Pandas |
-| Visualization | Matplotlib, Seaborn |
-| Data Preprocessing | Scikit-learn |
-| Modeling | Scikit-learn, XGBoost, Random Forest, Logistic Regression |
-| Balancing Data | imbalanced-learn (SMOTE) |
-| Dashboard | Power BI |
-| Environment | Jupyter Notebook |
+The solution consists of two interactive dashboards designed for different business perspectives.
 
----
+## 1. Delinquency Data Analysis Dashboard
 
-##  Key Insights
+This dashboard provides an overview of customer repayment behavior and loan performance.
 
-###  Customer & Delinquency Overview
-- Total **500 customers** analyzed across 6 months of payment data.
-- **80 customers (16%)** are delinquent; **420 customers (84%)** are in good standing.
-- The dataset is significantly **imbalanced**, requiring SMOTE / oversampling before model training.
+### Key Business Metrics
 
-###  Missing Payments
-- Most customers missed **2 to 4 payments** — the highest frequency bucket.
-- Very few customers missed only **1 payment**, suggesting that delinquency tends to escalate quickly once it begins.
+* Total Customers
+* Delinquent Customers
+* Average Customer Income
+* Average Active Loan Amount
+* Average Missed Payments
+* Average Credit Utilization
 
-###  Employment Status
-- **Unemployed customers** form the largest group in the dataset.
-- Unemployment is a strong indicator of financial stress and correlates with higher delinquency risk.
+### Business Analysis
 
-###  Credit Card Type
-- **Gold** is the most popular card type (118 customers); **Platinum** is the least common (76 customers).
-- Business card holders have the **highest delinquency count (23)** among all card types.
-- Standard card holders have the **lowest delinquency count (11)**.
+The dashboard allows users to:
 
-###  Location
-- Credit cards are distributed fairly across all 5 cities — Los Angeles, Chicago, Phoenix, Houston, New York.
-- **New York** has slightly fewer cardholders and the **lowest delinquency count (11)**.
-- **Los Angeles** has the highest delinquency count **(21)** among all cities.
+* Monitor customer payment performance over time.
+* Compare delinquency across locations.
+* Analyze customer distribution by age group.
+* Evaluate debt burden across income categories.
+* Track monthly payment trends.
+* Compare delinquency rates across different credit card types.
 
-###  Age Group
-- The **26–50 age group** represents the largest segment **(43%)**.
-- The **51–75 age group** follows closely **(41.6%)**.
-- The **0–25 age group** makes up only **15%** of customers.
-
-###  Debt-to-Income Ratio by Income Segment
-- **Low income** segment carries the highest Debt-to-Income ratio **(0.32)**.
-- **High income** segment is at **0.30** and **Medium income** at **0.29** — relatively balanced.
-- Low-income customers face greater repayment burden relative to earnings.
-
-###  Monthly Payment Trends
-- **Late payment ratio is consistently high** across all 6 months — indicating a systemic pattern, not a one-off event.
-- Month_1 breakdown: Late (159), Missed (164), On-time (177) — nearly one-third of customers were already late or missed in the very first month.
-
-###  Model Insights
-- All three models (Logistic Regression, Random Forest, XGBoost) struggled to detect **class 1 (delinquent)** cases, with F1-scores near 0 for that class.
-- ROC-AUC scores (~0.35–0.38) are close to random, suggesting the current feature set and dataset size (500 rows) are insufficient for robust prediction.
-- A **larger dataset and deeper feature engineering** are needed to improve minority class detection.
+Interactive filters enable business users to analyze specific customer groups based on month, employment status, income category, payment status, location, and delinquency status.
 
 ---
 
-##  Results
+## 2. Risk Analysis Dashboard
 
-- Achieved **high accuracy and recall** on the test set.
-- Balanced data improved the model's ability to detect delinquent cases.
-- Visualizations provided strong insights into risk factors.
+The second dashboard focuses on customer credit risk assessment.
 
----
+It includes:
 
-##  Future Enhancements
+* Overall Delinquency Rate
+* High-Risk Customer Count
+* Average Credit Score
+* Total Outstanding Loan Amount
+* Average Debt-to-Income Ratio
+* Average Missed Payments
 
-- Hyperparameter tuning using **GridSearchCV** or **Optuna**.
-- Deploy model using **Flask / Streamlit** for real-time prediction.
-- Add **feature importance analysis** for interpretability.
+The dashboard enables decision-makers to:
 
----
-
-
-
-##  Author
-
-**Karina Goswami**
- - Data Analyst | Data Science Enthusiast | Machine Learning Learner
- - [goswamikarina01@gmail.com]
- - [www.linkedin.com/in/karina-goswami-0323bb321)
+* Identify customers with elevated credit risk.
+* Compare credit scores against missed payments.
+* Analyze debt burden across income groups.
+* Monitor delinquent customers by employment status.
+* Review high-risk customers requiring additional assessment before loan approval.
 
 ---
 
+# Key Business Insights
+
+## Customer Portfolio
+
+The organization manages a portfolio of 500 customers, with 80 customers identified as delinquent.
+
+Although the majority of customers remain in good standing, the delinquent customer segment represents a significant financial risk requiring continuous monitoring.
+
+---
+
+## Income Analysis
+
+Customers within the lower income segment exhibit the highest Debt-to-Income ratio.
+
+This indicates a greater repayment burden and suggests that income level is an important factor in assessing repayment capacity.
+
+---
+
+## Payment Behaviour
+
+Monthly repayment analysis reveals a consistently high number of late and missed payments across multiple months.
+
+Rather than isolated incidents, the data suggests recurring repayment issues among certain customer groups.
+
+---
+
+## Geographic Analysis
+
+Delinquency levels vary across different cities.
+
+This insight allows business teams to identify regional trends and design location-specific collection strategies.
+
+---
+
+## Credit Card Analysis
+
+Business credit card holders exhibit the highest delinquency rate compared with other card categories.
+
+This finding highlights the need for additional monitoring and risk assessment for customers within this segment.
+
+---
+
+## Customer Risk Segmentation
+
+Customers were categorized into Low, Medium, and High Risk groups.
+
+The majority of identified high-risk customers share characteristics such as:
+
+* Lower credit scores
+* Higher debt burden
+* Multiple missed payments
+* Higher outstanding loan balances
+
+These insights can support proactive intervention before accounts become severely delinquent.
+
+---
+
+# Business Impact
+
+The solution provides several business benefits:
+
+* Enables proactive credit risk monitoring.
+* Helps identify customers requiring additional review before loan approval.
+* Supports faster lending decisions through interactive dashboards.
+* Reduces manual reporting effort.
+* Improves visibility into customer repayment behaviour.
+* Assists management in prioritizing collection activities.
+* Supports better portfolio risk management through data-driven insights.
+
+---
+
+# Tools & Technologies
+
+* SQL
+* Python
+* Pandas
+* NumPy
+* Power BI
+* Matplotlib
+* Seaborn
+
+---
+
+# Conclusion
+
+This project demonstrates how data analytics and business intelligence can transform raw financial data into meaningful business insights.
+
+By combining data preparation, analytical techniques, and interactive Power BI dashboards, the solution enables financial institutions to better understand customer repayment behaviour, identify high-risk borrowers, and support informed lending decisions.
+
+The project highlights the practical application of data analytics in credit risk management while showcasing the value of interactive dashboards in improving business decision-making.
